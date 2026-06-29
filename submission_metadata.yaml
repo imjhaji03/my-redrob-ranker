@@ -1,0 +1,52 @@
+
+team_name: "Logic_Nerds"
+
+primary_contact:
+  name: "Amit Gunjan Jha"
+  email: "amitgunjanjha799@gmail.com"
+  phone: "+91-6290660611"
+
+team_members:
+  - name: "Amit Gunjan Jha"
+    email: "amitgunjanjha799@gmail.com"
+    role: "Team Lead"
+  - name: "Aaditya Raj"
+    email: "adityaraj896919@gmail.com"
+    role: "Backend"    
+
+github_repo: "https://github.com/imjhaji03/my-redrob-ranker"
+sandbox_link: "https://YOUR-STREAMLIT-APP-URL"
+reproduce_command: "python src/ranker.py --candidates ./candidates.jsonl --out ./output/submission.xlsx"
+
+compute:
+  platform: "Windows 11 local machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "Claude"
+
+ai_usage_summary: |
+  Used Claude Code for project code refinement, packaging.Ranking itself remains a deterministic,
+  local CPU-only pipeline with no live API calls during inference.
+
+methodology_summary: |
+  Rule-based candidate ranker that combines experience fit, JD skill
+  alignment, company/product-fit, career narrative evidence, and a
+  behavioral engagement multiplier. A multi-layer honeypot detector
+  penalizes logically inconsistent, stuffed, or suspicious profiles.
+  Final ranking is deterministic, CPU-friendly, and produces a valid
+  challenge submission XLSX within the runtime budget.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
