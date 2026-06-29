@@ -9,13 +9,13 @@ primary_contact:
 team_members:
   - name: "Amit Gunjan Jha"
     email: "amitgunjanjha799@gmail.com"
-    role: "Team Lead"
+    role: "Backend"
   - name: "Aaditya Raj"
     email: "adityaraj896919@gmail.com"
     role: "Backend"    
 
 github_repo: "https://github.com/imjhaji03/my-redrob-ranker"
-sandbox_link: "https://YOUR-STREAMLIT-APP-URL"
+sandbox_link: "https://my-redrob-ranker-imjhaji03.streamlit.app/"
 reproduce_command: "python src/ranker.py --candidates ./candidates.jsonl --out ./output/submission.xlsx"
 
 compute:
@@ -33,7 +33,7 @@ ai_tools_used:
   - "Claude"
 
 ai_usage_summary: |
-  Used Claude Code for project code refinement, packaging.Ranking itself remains a deterministic,
+  Used Claude Code for project code refinement, packaging. Ranking itself remains a deterministic,
   local CPU-only pipeline with no live API calls during inference.
 
 methodology_summary: |
